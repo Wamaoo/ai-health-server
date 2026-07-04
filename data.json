@@ -1,0 +1,319 @@
+{
+  "sessions": [
+    {
+      "id": "17831550327556q8ze2",
+      "sessionId": "session_17831550327556q8ze2",
+      "sessionTitle": "小暖助手 - 2026/7/4 16:50:32",
+      "status": "ACTIVE",
+      "userId": 5,
+      "startedAt": "2026-07-04 08:50:32",
+      "lastMessageTime": "2026-07-04 08:50:34",
+      "messageCount": 2,
+      "lastMessageContent": "嗨，亲爱的，你好呀！今天过得怎么样？有什么想和我分享的吗？😄"
+    },
+    {
+      "id": "1783154481662j34u6h",
+      "sessionId": "session_1783154481662j34u6h",
+      "sessionTitle": "小暖助手 - 2026/7/4 16:41:21",
+      "status": "ACTIVE",
+      "userId": 4,
+      "startedAt": "2026-07-04 08:41:21",
+      "lastMessageTime": "2026-07-04 08:41:21",
+      "messageCount": 1,
+      "lastMessageContent": "nihao"
+    },
+    {
+      "id": "1783154461464pgi9pf",
+      "sessionId": "session_1783154461464pgi9pf",
+      "sessionTitle": "小暖助手 - 2026/7/4 16:41:01",
+      "status": "ACTIVE",
+      "userId": 3,
+      "startedAt": "2026-07-04 08:41:01",
+      "lastMessageTime": "2026-07-04 08:41:06",
+      "messageCount": 2,
+      "lastMessageContent": "你好呀😊 很高兴你来找我聊天。最近过得怎么样？有什么想说的话，都可以尽情跟我分享哦，我会认真倾听的"
+    },
+    {
+      "id": "1783152435373ogsfnf",
+      "sessionId": "session_1783152435373ogsfnf",
+      "sessionTitle": "小暖助手 - 2026/7/4 16:07:13",
+      "status": "ACTIVE",
+      "userId": 5,
+      "startedAt": "2026-07-04 08:07:15",
+      "lastMessageTime": "2026-07-04 08:07:21",
+      "messageCount": 2,
+      "lastMessageContent": "嗨，亲爱的，你好啊！😊 今天过得怎么样？有什么想和我分享的事情吗？我在这里，随时准备倾听你的心声。"
+    },
+    {
+      "id": "1783063880095uvw8dp",
+      "sessionId": "session_1783063880095uvw8dp",
+      "sessionTitle": "小暖助手 - 2026/7/3 15:31:20",
+      "status": "ACTIVE",
+      "startedAt": "2026-07-03 07:31:20",
+      "lastMessageTime": "2026-07-03 07:31:29",
+      "messageCount": 2,
+      "lastMessageContent": "你好呀！🌟 很高兴看到你，希望今天你一切都好。有什么想和我分享的，或者需要我帮忙的事情吗？别担心，"
+    },
+    {
+      "id": "1782800316275wgftug",
+      "sessionId": "session_1782800316275wgftug",
+      "sessionTitle": "小暖助手 - 2026/6/30 14:18:37",
+      "status": "ACTIVE",
+      "userId": 6,
+      "startedAt": "2026-06-30 06:18:36",
+      "lastMessageTime": "2026-06-30 06:18:41",
+      "messageCount": 2,
+      "lastMessageContent": "亲爱的，你好呀！😊看到你来了，心里暖暖的。今天感觉怎么样？有什么想和我分享的吗？"
+    }
+  ],
+  "messagesDB": {
+    "1782800316275wgftug": [
+      {
+        "id": "1782800316275evlrh3",
+        "sessionId": "1782800316275wgftug",
+        "senderType": 1,
+        "content": "你好",
+        "createdAt": "2026-06-30 06:18:36"
+      },
+      {
+        "id": "1782800321699ahnc45",
+        "sessionId": "1782800316275wgftug",
+        "senderType": 2,
+        "content": "亲爱的，你好呀！😊看到你来了，心里暖暖的。今天感觉怎么样？有什么想和我分享的吗？",
+        "createdAt": "2026-06-30 06:18:41"
+      }
+    ],
+    "1783063880095uvw8dp": [
+      {
+        "id": "1783063880095v77e7u",
+        "sessionId": "1783063880095uvw8dp",
+        "senderType": 1,
+        "content": "nihao",
+        "createdAt": "2026-07-03 07:31:20"
+      },
+      {
+        "id": "1783063889480zmskcf",
+        "sessionId": "1783063880095uvw8dp",
+        "senderType": 2,
+        "content": "你好呀！🌟 很高兴看到你，希望今天你一切都好。有什么想和我分享的，或者需要我帮忙的事情吗？别担心，我在这里，聆听你的心声。💖",
+        "createdAt": "2026-07-03 07:31:29"
+      }
+    ],
+    "1783152435373ogsfnf": [
+      {
+        "id": "17831524353748cx35b",
+        "sessionId": "1783152435373ogsfnf",
+        "senderType": 1,
+        "content": "你好呀",
+        "createdAt": "2026-07-04 08:07:15"
+      },
+      {
+        "id": "1783152441480f4twye",
+        "sessionId": "1783152435373ogsfnf",
+        "senderType": 2,
+        "content": "嗨，亲爱的，你好啊！😊 今天过得怎么样？有什么想和我分享的事情吗？我在这里，随时准备倾听你的心声。",
+        "createdAt": "2026-07-04 08:07:21"
+      }
+    ],
+    "1783154461464pgi9pf": [
+      {
+        "id": "1783154461464wcwqxi",
+        "sessionId": "1783154461464pgi9pf",
+        "senderType": 1,
+        "content": "nihao",
+        "createdAt": "2026-07-04 08:41:01"
+      },
+      {
+        "id": "1783154466241mdzr2k",
+        "sessionId": "1783154461464pgi9pf",
+        "senderType": 2,
+        "content": "你好呀😊 很高兴你来找我聊天。最近过得怎么样？有什么想说的话，都可以尽情跟我分享哦，我会认真倾听的。",
+        "createdAt": "2026-07-04 08:41:06"
+      }
+    ],
+    "1783154481662j34u6h": [
+      {
+        "id": "17831544816627fxvi2",
+        "sessionId": "1783154481662j34u6h",
+        "senderType": 1,
+        "content": "nihao",
+        "createdAt": "2026-07-04 08:41:21"
+      }
+    ],
+    "17831550327556q8ze2": [
+      {
+        "id": "17831550327555hds0p",
+        "sessionId": "17831550327556q8ze2",
+        "senderType": 1,
+        "content": "hello",
+        "createdAt": "2026-07-04 08:50:32"
+      },
+      {
+        "id": "1783155034821anjh32",
+        "sessionId": "17831550327556q8ze2",
+        "senderType": 2,
+        "content": "嗨，亲爱的，你好呀！今天过得怎么样？有什么想和我分享的吗？😄",
+        "createdAt": "2026-07-04 08:50:34"
+      }
+    ]
+  },
+  "emotionDiaries": [
+    {
+      "id": 3,
+      "diaryDate": "2026-07-04",
+      "moodScore": 9,
+      "dominantEmotion": "兴奋",
+      "emotionTriggers": "加油，努力找实习！！",
+      "diaryContent": "有点懒惰，但是一定要努力！！",
+      "sleepQuality": "4",
+      "stressLevel": "2",
+      "userId": 5,
+      "nickName": "wamao",
+      "userName": "wamao",
+      "createdAt": "2026-07-04 02:34:17",
+      "updatedAt": "2026-07-04 02:34:17",
+      "aiEmotionAnalysis": "{\"primaryEmotion\":\"兴奋\",\"emotionScore\":90,\"isNegative\":false,\"riskLevel\":0,\"suggestion\":\"情绪日记记录是很好的习惯，继续坚持！\",\"riskDescription\":\"\",\"improvementSuggestions\":[\"保持记录习惯\",\"多关注积极事件\"]}"
+    },
+    {
+      "id": 2,
+      "diaryDate": "2026-07-03",
+      "moodScore": 10,
+      "dominantEmotion": "快乐",
+      "emotionTriggers": "今天周五",
+      "diaryContent": "明天周末",
+      "sleepQuality": "4",
+      "stressLevel": "3",
+      "userId": 5,
+      "nickName": "wamao",
+      "userName": "wamao",
+      "createdAt": "2026-07-03 06:41:18",
+      "updatedAt": "2026-07-03 06:41:18",
+      "aiEmotionAnalysis": "{\"primaryEmotion\":\"快乐\",\"emotionScore\":100,\"isNegative\":false,\"riskLevel\":0,\"suggestion\":\"情绪日记记录是很好的习惯，继续坚持！\",\"riskDescription\":\"\",\"improvementSuggestions\":[\"保持记录习惯\",\"多关注积极事件\"]}"
+    },
+    {
+      "id": 3,
+      "diaryDate": "2026-06-30",
+      "moodScore": 5,
+      "dominantEmotion": "惊讶",
+      "emotionTriggers": "",
+      "diaryContent": "",
+      "sleepQuality": "1",
+      "stressLevel": "3",
+      "userId": 6,
+      "nickName": "110",
+      "userName": "11",
+      "createdAt": "2026-06-30 06:20:03",
+      "updatedAt": "2026-06-30 06:20:03",
+      "aiEmotionAnalysis": "{\"primaryEmotion\":\"惊讶\",\"emotionScore\":50,\"isNegative\":false,\"riskLevel\":0,\"suggestion\":\"情绪日记记录是很好的习惯，继续坚持！\",\"riskDescription\":\"\",\"improvementSuggestions\":[\"保持记录习惯\",\"多关注积极事件\"]}"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "nickname": "管理员",
+      "phone": "13800138001",
+      "password": "123456",
+      "gender": 0,
+      "userType": 2
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@example.com",
+      "nickname": "测试1",
+      "phone": "13800138000",
+      "password": "123456",
+      "gender": 0,
+      "userType": 1
+    },
+    {
+      "id": 3,
+      "username": "user2",
+      "email": "user2@example.com",
+      "nickname": "测试2",
+      "phone": "13800138002",
+      "password": "123456",
+      "gender": 0,
+      "userType": 1
+    },
+    {
+      "id": 4,
+      "username": "user3",
+      "email": "user3@example.com",
+      "nickname": "测试3",
+      "phone": "13800138003",
+      "password": "123456",
+      "gender": 0,
+      "userType": 1
+    },
+    {
+      "id": 5,
+      "username": "wamao",
+      "email": "550862460@qq.com",
+      "nickname": "wamao",
+      "phone": "19811845852",
+      "password": "YZYyzy111",
+      "gender": 0,
+      "userType": 1
+    },
+    {
+      "id": 6,
+      "username": "11",
+      "email": "33",
+      "nickname": "110",
+      "phone": "789456123012",
+      "password": "12345",
+      "gender": 0,
+      "userType": 1
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "如何应对日常焦虑？5个实用技巧",
+      "content": "<p>焦虑是每个人都可能经历的情绪反应。以下5个技巧可以帮助你缓解焦虑：</p><h2>1. 深呼吸练习</h2><p>当你感到焦虑时，尝试做5次深呼吸，吸气4秒，呼气6秒。</p><h2>2. 正念冥想</h2><p>每天花10分钟进行正念练习，专注于当下的感受。</p><h2>3. 规律运动</h2><p>运动可以释放内啡肽，帮助改善情绪。</p><h2>4. 写情绪日记</h2><p>把你的担忧写下来，有助于理清思路。</p><h2>5. 寻求支持</h2><p>不要独自承受，和朋友或专业人士聊聊。</p>",
+      "coverImage": "/uploads/article_1783153157454_cxrvsa.webp",
+      "categoryId": 1,
+      "categoryName": "情绪管理",
+      "summary": "焦虑是现代人的常见问题，本文分享5个实用的应对技巧，帮助你在焦虑时刻找到平静。",
+      "tags": "焦虑,情绪管理,减压",
+      "authorName": "心理AI助手",
+      "readCount": 1241,
+      "status": 1,
+      "createdAt": "2026-05-20 10:00:00",
+      "updatedAt": "2026-07-04 08:19:19"
+    },
+    {
+      "id": 2,
+      "title": "改善睡眠质量的7个科学方法",
+      "content": "<p>良好的睡眠对心理健康至关重要。以下科学方法可以帮助你改善睡眠：</p><h2>1. 固定作息时间</h2><p>每天在同一时间睡觉和起床，包括周末。</p><h2>2. 睡前1小时远离屏幕</h2><p>蓝光会抑制褪黑素分泌，影响睡眠。</p><h2>3. 创造舒适的睡眠环境</h2><p>保持卧室黑暗、安静、凉爽。</p><h2>4. 避免睡前咖啡因和酒精</h2><p>咖啡因和酒精会干扰睡眠质量。</p><h2>5. 睡前放松仪式</h2><p>可以尝试阅读、听轻音乐或泡个热水澡。</p><h2>6. 白天适度运动</h2><p>运动有助于晚上更好地入睡。</p><h2>7. 不要强迫自己入睡</h2><p>如果20分钟睡不着，起来做些轻松的事情。</p>",
+      "coverImage": "/uploads/article_1782956663816_mpv1fc.jpg",
+      "categoryId": 2,
+      "categoryName": "睡眠健康",
+      "summary": "睡眠质量直接影响心理健康，本文整理了7个科学验证的改善睡眠方法。",
+      "tags": "睡眠,健康生活,减压",
+      "authorName": "心理AI助手",
+      "readCount": 895,
+      "status": 1,
+      "createdAt": "2026-05-18 14:30:00",
+      "updatedAt": "2026-07-02 01:44:26"
+    },
+    {
+      "id": 3,
+      "title": "正念冥想入门指南",
+      "content": "<p>正念冥想是一种训练注意力的方法，已被科学证明对心理健康有益。</p><h2>什么是正念？</h2><p>正念是指有意识地、不加评判地关注当下。</p><h2>基础冥想练习</h2><p>找一个安静的地方坐下，专注于呼吸的感觉。当注意力分散时，轻轻带回呼吸上。</p><h2>日常正念练习</h2><p>吃饭时专注于食物的味道和口感，走路时感受脚步接触地面。</p>",
+      "coverImage": "/uploads/article_1782956622834_81i06o.webp",
+      "categoryId": 1,
+      "categoryName": "情绪管理",
+      "summary": "正念冥想是一种有效的减压方法，本文带你了解正念的基本概念和入门练习。",
+      "tags": "正念,冥想,减压",
+      "authorName": "心理AI助手",
+      "readCount": 2101,
+      "status": 1,
+      "createdAt": "2026-05-15 09:00:00",
+      "updatedAt": "2026-07-02 01:43:44"
+    }
+  ]
+}
