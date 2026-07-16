@@ -159,6 +159,22 @@
   },
   "emotionDiaries": [
     {
+      "id": 4,
+      "diaryDate": "2026-07-17",
+      "moodScore": 8,
+      "dominantEmotion": "悲伤",
+      "emotionTriggers": "猫毛过敏🤧",
+      "diaryContent": "今天是我回家的第三天，我终究没抵挡住我家猫毛的攻击，又鼻炎啦😭😭",
+      "sleepQuality": 5,
+      "stressLevel": 2,
+      "userId": 5,
+      "nickName": "wamao",
+      "userName": "wamao",
+      "createdAt": "2026-07-16 16:49:32",
+      "updatedAt": "2026-07-16 16:49:32",
+      "aiEmotionAnalysis": "{\"primaryEmotion\":\"悲伤\",\"emotionScore\":80,\"isNegative\":false,\"riskLevel\":0,\"suggestion\":\"情绪日记记录是很好的习惯，继续坚持！\",\"riskDescription\":\"\",\"improvementSuggestions\":[\"保持记录习惯\",\"多关注积极事件\"]}"
+    },
+    {
       "id": 3,
       "diaryDate": "2026-07-04",
       "moodScore": 9,
@@ -280,7 +296,7 @@
       "summary": "焦虑是现代人的常见问题，本文分享5个实用的应对技巧，帮助你在焦虑时刻找到平静。",
       "tags": "焦虑,情绪管理,减压",
       "authorName": "心理AI助手",
-      "readCount": 1241,
+      "readCount": 1242,
       "status": 1,
       "createdAt": "2026-05-20 10:00:00",
       "updatedAt": "2026-07-04 08:19:19"
