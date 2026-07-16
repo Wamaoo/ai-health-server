@@ -11,6 +11,9 @@ importers:
       connect-history-api-fallback:
         specifier: ^1.6.0
         version: 1.6.0
+      dotenv:
+        specifier: ^17.4.2
+        version: 17.4.2
       express:
         specifier: ^4.17.1
         version: 4.22.2
@@ -113,6 +116,10 @@ packages:
   destroy@1.2.0:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==, tarball: https://registry.npmmirror.com/destroy/-/destroy-1.2.0.tgz}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
+
+  dotenv@17.4.2:
+    resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==, tarball: https://registry.npmmirror.com/dotenv/-/dotenv-17.4.2.tgz}
+    engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==, tarball: https://registry.npmmirror.com/dunder-proto/-/dunder-proto-1.0.1.tgz}
@@ -494,6 +501,8 @@ snapshots:
   depd@2.0.0: {}
 
   destroy@1.2.0: {}
+
+  dotenv@17.4.2: {}
 
   dunder-proto@1.0.1:
     dependencies:
