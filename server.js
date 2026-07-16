@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, uploadsDir),
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname) || '.jpg'
-    cb(null, `article_${Date.now()}_${Math.random().toString(36).substr(2, 6)}${ext}`)
+    cb(null, `article_${Date.now()}_${Math.random().toString(36).substring(2, 8)}${ext}`)
   }
 })
 const upload = multer({ storage })
@@ -107,14 +107,8 @@ const categories = [
 // ==================== 辅助函数 ====================
 const success = (data) => ({ code: 200, msg: 'success', data })
 const error = (msg) => ({ code: -1, msg, data: null })
-const genId = () => Date.now() + Math.random().toString(36).substr(2, 6)
-const now = () => new Date().toISOString().replace('T', ' ').substr(0, 19)
-
-// 解析路径参数 /api/knowledge/article/:id
-const parseId = (url, prefix) => {
-  const p = url.replace('/api', '').replace(prefix, '').replace(/\/+$/, '')
-  return parseInt(p) || p.trim()
-}
+const genId = () => Date.now() + Math.random().toString(36).substring(2, 8)
+const now = () => new Date().toISOString().replace('T', ' ').substring(0, 19)
 
 // ==================== 持久化 ====================
 const saveData = () => {
@@ -204,7 +198,7 @@ app.get('/api/knowledge/category/tree', (req, res) => {
 app.get(/^\/api\/knowledge\/article\/(\d+)$/, (req, res) => {
   const id = parseInt(req.params[0])
   const article = articles.find(a => a.id === id)
-  if (article) { article.readCount++; return res.json(success(article)) }
+  if (article) { article.readCount++; saveData(); return res.json(success(article)) }
   res.json(error('文章不存在'))
 })
 
@@ -414,10 +408,10 @@ app.delete('/api/emotion-diary/my/:id', authMiddleware, (req, res) => {
 
 app.get('/api/emotion-diary/admin/page', authMiddleware, adminMiddleware, (req, res) => {
   let filtered = [...emotionDiaries]
-  const { userId, moodScreRange, currentPage = 1, size = 10 } = req.query
+  const { userId, moodScoreRange, currentPage = 1, size = 10 } = req.query
   if (userId) filtered = filtered.filter(d => d.userId == userId)
-  if (moodScreRange) {
-    const [min, max] = moodScreRange.split('-')
+  if (moodScoreRange) {
+    const [min, max] = moodScoreRange.split('-')
     filtered = filtered.filter(d => d.moodScore >= parseInt(min) && d.moodScore <= parseInt(max))
   }
   const pageNum = parseInt(currentPage)
