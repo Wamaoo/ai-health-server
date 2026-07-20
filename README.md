@@ -1,4 +1,5 @@
 # 心语 - 后端服务
+在线网址：https://ai-health-server.up.railway.app/ 
 
 心语心理健康 AI 助手的后端 API 服务，为前端提供数据接口与 AI 对话代理。
 
