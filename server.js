@@ -580,6 +580,44 @@ app.post('/api/proxy/chat/completions', authMiddleware, async (req, res) => {
   }
 })
 
+// 非流式 AI 接口（小程序用）：整体等待 Moonshot 返回 JSON
+app.post('/api/proxy/chat/completions/plain', authMiddleware, async (req, res) => {
+  try {
+    const bodyStr = JSON.stringify({ ...req.body, stream: false })
+    console.log('[代理-plain] 开始请求 Moonshot，消息数:', req.body.messages?.length)
+
+    const response = await fetch('https://api.moonshot.cn/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + MOONSHOT_API_KEY
+      },
+      body: bodyStr,
+      signal: AbortSignal.timeout(60000)
+    })
+
+    console.log('[代理-plain] Moonshot 状态:', response.status)
+
+    if (!response.ok) {
+      const text = await response.text()
+      console.error('[代理-plain] Moonshot 返回错误:', response.status, text)
+      return res.status(response.status).json({ code: -1, msg: 'AI 服务返回错误', data: null })
+    }
+
+    const json = await response.json()
+    const content = json.choices?.[0]?.message?.content || ''
+    const reasoning = json.choices?.[0]?.message?.reasoning_content || ''
+    console.log('[代理-plain] 完成，content 长度:', content.length)
+    res.json(success({ content, reasoning }))
+  } catch (err) {
+    console.error('[代理-plain] 请求失败:', err.name, err.message)
+    if (err.name === 'TimeoutError') {
+      return res.status(504).json({ code: -1, msg: 'AI 服务超时', data: null })
+    }
+    res.status(502).json({ code: -1, msg: 'AI 服务请求失败', data: null })
+  }
+})
+
 // ==================== 静态文件 & SPA 回退 ====================
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 app.use(history())
