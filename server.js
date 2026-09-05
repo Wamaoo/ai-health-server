@@ -169,6 +169,49 @@ app.post('/api/user/login', (req, res) => {
   res.status(401).json(error('用户名或密码错误'))
 })
 
+// 微信小程序一键登录：前端传 code，后端换 openid，老用户直接登录、新用户自动建号
+app.post('/api/wx/login', async (req, res) => {
+  const { code } = req.body || {}
+  if (!code) return res.status(400).json(error('缺少 code'))
+  const appid = process.env.WX_APPID
+  const secret = process.env.WX_APPSECRET
+  if (!appid || !secret) return res.status(500).json(error('服务端未配置 WX_APPID / WX_APPSECRET'))
+  let wxData
+  try {
+    const wxUrl = `https://api.weixin.qq.com/sns/jscode2session?appid=${appid}&secret=${secret}&js_code=${encodeURIComponent(code)}&grant_type=authorization_code`
+    const resp = await fetch(wxUrl)
+    wxData = await resp.json()
+  } catch {
+    return res.status(502).json(error('无法连接微信服务器，请稍后重试'))
+  }
+  if (!wxData.openid) {
+    return res.json(error(`微信登录失败：${wxData.errmsg || `errcode ${wxData.errcode}`}`))
+  }
+  let user = users.find(u => u.openid === wxData.openid)
+  if (!user) {
+    // 新用户自动注册；id 用数字，保证现有 mock-token-{id}-{ts} 能解析
+    const maxId = users.reduce((m, u) => Math.max(m, Number(u.id) || 0), 0)
+    user = {
+      id: maxId + 1,
+      username: `wx_${wxData.openid.slice(-8)}`,
+      email: `${wxData.openid.slice(-12)}@wx.local`,
+      nickname: '微信用户',
+      password: `wx_${wxData.openid}`,
+      gender: 0,
+      userType: 1,
+      openid: wxData.openid,
+      createdAt: now()
+    }
+    users.push(user)
+    saveData()
+  }
+  const token = `mock-token-${user.id}-${Date.now()}`
+  const userInfo = { ...user }
+  delete userInfo.password
+  delete userInfo.openid
+  res.json(success({ token, userInfo }))
+})
+
 app.post('/api/user/add', (req, res) => {
   const data = req.body
   if (users.find(u => u.username === data.username)) return res.json(error('用户名已存在'))
